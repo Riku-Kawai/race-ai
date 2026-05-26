@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: race-ai-app
+    volumes:
+      - ./src:/app/src
+    tty: true
+    stdin_open: true
